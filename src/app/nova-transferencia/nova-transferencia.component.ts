@@ -20,5 +20,11 @@ export class NovaTransferenciaComponent {
       destino: this.destino
     };
     this.aoTransferir.emit(dadosTransferencia);
+    this.limparDados();
+  }
+
+  limparDados() {
+    this.valor = null;
+    this.destino = null;
   }
 }
