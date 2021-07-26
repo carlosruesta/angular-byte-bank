@@ -8,3 +8,9 @@
 - Como é organizada uma aplicação Angular;
 - Criar e utilizar um componente Angular.
 
+## Aulas 02
+
+- Importar as funcionalidades de formulário para o projeto;
+- Escutar o evento de submit do formulário através de event binding;
+- A diferença do Two-way data binding para property binding;
+- Capturar as informações de um formulário.
