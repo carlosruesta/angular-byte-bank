@@ -26,3 +26,9 @@
 - Utilizar o metadata @Input() para receber valores em um componente;
 - Exibir uma lista de dados através da diretiva *ngFor;
 - Configurar o formato de horas na aplicação.
+
+## Aula 05
+
+- Utilizar a diretiva *ngIf;
+- Trabalhar com Service
+
