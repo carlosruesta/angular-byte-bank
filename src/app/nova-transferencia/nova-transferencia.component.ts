@@ -16,6 +16,7 @@ export class NovaTransferenciaComponent {
     console.log('Solicitada nova transferência');
     console.log(this.valor, this.destino);
     const dadosTransferencia = {
+      data: new Date(),
       valor: this.valor,
       destino: this.destino
     };

@@ -1,9 +1,11 @@
-<p>
-  Dados transferidos:
-  <span>
-    Valor: {{transferencia?.valor}}
-  </span>
-  <span>
-    Destino: {{transferencia?.destino}}
-  </span>
-</p>
+<h3>Valores transferidos</h3>
+
+<div *ngFor="let transferencia of transferencias" style="display: flex; justify-content: space-around" >
+
+  <span>Data: {{transferencia?.data}}</span>
+
+  <span>Valor: {{transferencia?.valor}}</span>
+
+  <span>Destino: {{transferencia?.destino}} </span>
+
+</div>
