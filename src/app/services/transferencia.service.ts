@@ -9,11 +9,10 @@ import {Observable} from 'rxjs';
 export class TransferenciaService {
 
   private listaTransferencias: any[];
-  private url: string;
+  private url = 'http://localhost:3000/transferencias';
 
   constructor(private httpClient: HttpClient) {
     this.listaTransferencias = [];
-    this.url = 'http://localhost:3000/transferencias';
   }
 
   get transferencias() {
