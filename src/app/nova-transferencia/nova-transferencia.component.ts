@@ -1,6 +1,7 @@
 import {Component, EventEmitter, Output} from '@angular/core';
 import {TransferenciaService} from '../services/transferencia.service';
 import {Transferencia} from '../models/transferencia';
+import {Router} from '@angular/router';
 
 @Component({
     selector: 'app-nova-transferencia',
@@ -14,8 +15,10 @@ export class NovaTransferenciaComponent {
   valor: number;
   destino: string;
 
-  constructor(private service: TransferenciaService) {
-  }
+  constructor(
+    private service: TransferenciaService,
+    private router: Router
+  ) { }
 
   transferir() {
     console.log('Solicitada nova transferência');
@@ -29,6 +32,7 @@ export class NovaTransferenciaComponent {
       (dados: Transferencia) => {
         console.log(dados);
         this.limparDados();
+        this.router.navigateByUrl('extrato');
       },
       // em caso de erro
       (error) => {
